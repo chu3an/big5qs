@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+<!-- AYAYA -->
 
 <head>
     <title>大五碼速查 @chu3an</title>
@@ -8,8 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    
 </head>
 <style>
     h1,
@@ -24,6 +23,23 @@
     button {
         font-family: Microsoft JhengHei;
     }
+
+    table,
+    td {
+        font-family: Microsoft JhengHei;
+        border: 2px solid #333;
+    }
+
+    thead {
+        background-color: #333;
+        color: #fff;
+        text-align-last: center;
+    }
+
+    tbody {
+        font-weight: bold;
+        text-align-last: center;
+    }
 </style>
 
 <body>
@@ -35,9 +51,29 @@
 
     <div class="text-center">
         <input type="text" id="chtext">
-        <button type="button">查表</button>
-        <p>JavaScript測試中，尚未完工</p>
+        <button type="button" id="chbutn">查表</button>
+        <p id="status">JavaScript測試中，尚未完工</p>
+        <p id="demo">55688</p>
     </div>
+
+    <div class="text-center" id="result" style="display:none">
+        <table id="chtable" type="hidden">
+            <thead>
+                <tr>
+                    <th>文字</th>
+                    <th>內碼</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The table body</td>
+                    <td>with two columns</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="big5code.js"></script>
 </body>
 
 </html>
