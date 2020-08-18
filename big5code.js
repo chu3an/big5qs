@@ -13,16 +13,23 @@ function requestsJson() {
             // Loop finding
             var textArray = myText.split("")
             for (var i = 0; i < textArray.length; i++) {
-                console.log(jsonObj[textArray[i]])
+                var table = document.getElementById("result");
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                cell1.innerHTML = textArray[i];
+                var cell2 = row.insertCell(1);
+                cell2.innerHTML = jsonObj[textArray[i]];
+                console.log(jsonObj[textArray[i]]);
             }
         }
     };
-    document.getElementById("result").style = "display:contents"
+    document.getElementById("result").style = "visibility:unset"
 }
 
+/** input onclick event */
 document.getElementById("chbutn").onclick = function () { requestsJson() };
 
-/** Add "input" enter hot key support */
+/** input enter hot key support */
 var input = document.getElementById("chtext");
 input.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {

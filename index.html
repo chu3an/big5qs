@@ -26,8 +26,10 @@
 
     table,
     td {
+        margin-right: 100;
         font-family: Microsoft JhengHei;
         border: 2px solid #333;
+        margin: 0 auto;
     }
 
     thead {
@@ -47,27 +49,27 @@
     <div class="jumbotron text-center">
         <h2>Big5內碼速查</h2>
         <p>輸入中文字可得大五碼內碼</p>
+        <a href="https://i.imgur.com/4NxZWAG.gif">如何使用?</a>
     </div>
 
     <div class="text-center">
         <input type="text" id="chtext">
         <button type="button" id="chbutn">查表</button>
-        <p id="status">JavaScript測試中，尚未完工</p>
-        <p id="demo">55688</p>
+        <p id="status">程式功能已正常上線，網頁板型施工中</p>
     </div>
 
-    <div class="text-center" id="result" style="display:none">
-        <table id="chtable" type="hidden">
-            <thead>
+    <div>
+        <table id="result" style="visibility:hidden">
+            <thead id="result-head">
                 <tr>
                     <th>文字</th>
                     <th>內碼</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="result-body">
                 <tr>
-                    <td>The table body</td>
-                    <td>with two columns</td>
+                    <th></th>
+                    <th></th>
                 </tr>
             </tbody>
         </table>
