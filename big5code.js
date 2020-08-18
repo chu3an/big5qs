@@ -1,5 +1,5 @@
 
-var dataURL = 'https://raw.githubusercontent.com/Chu3an/big5qs/master/big5code.json'
+var dataURL = 'https://chu3an.github.io/big5qs/big5code.json'
 
 function requestsJson() {
     var myText = document.getElementById("chtext").value;
