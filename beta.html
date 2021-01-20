@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- Required meta tags -->
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 網頁資訊 -->
+    <title>Big5內碼速查 by chu3an</title>
+</head>
+<!--<style>
+    /* 表格一般屬性 */
+    table,
+    th,
+    td {
+        border: 1px solid #343a40;
+    }
+
+    /* 表格文字屬性 */
+    th,
+    td {
+        padding: 2px;
+        text-align: center;
+    }
+</style>-->
+
+<body>
+    <div class="jumbotron text-center">
+        <h2>Big5內碼速查</h2>
+        <a>輸入中文字可得大五碼內碼</a>
+        <a href="https://i.imgur.com/aTh0eUx.gif">如何使用?</a>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" id="theText" class="form-control" placeholder="中文字" aria-label="chtText"
+            aria-describedby="button-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-primary btn" type="button" id="theBtn">查詢</button>
+            <button class="btn btn-outline-danger btn" type="button" id="theClr">清除</button>
+        </div>
+    </div>
+
+
+
+    <!-- style="visibility:hidden -->
+    <div class="text-center">
+        <table id="theResult" class="table table-sm table-hover">
+            <thead id="theHead" class="thead-light">
+                <tr>
+                    <th>文字</th>
+                    <th>內碼</th>
+                </tr>
+            </thead>
+            <tbody id="theBody">
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+
+    <script src="./big5func.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
