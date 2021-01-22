@@ -27,7 +27,7 @@ function requestsJson() {
 }
 
 /** theBtn onclick event */
-document.getElementById("theBtn").onclick = function () { 
+document.getElementById("theBtn").onclick = function () {
     document.getElementById("theBox").style = "visibility:unset"
     requestsJson()
 };
